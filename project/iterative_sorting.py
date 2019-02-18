@@ -32,8 +32,9 @@ def insertion_sort(arr):
 arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
 print(insertion_sort(arr))
 
-
 # STRETCH: implement the Bubble Sort function below
+
+
 def bubble_sort(arr):
 
     return arr

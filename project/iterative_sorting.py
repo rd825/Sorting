@@ -14,8 +14,8 @@ def selection_sort(arr):
     return arr
 
 
-my_arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
-print(selection_sort(my_arr))
+arr1 = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(selection_sort(arr1))
 
 # TO-DO: implement the Insertion Sort function below
 
@@ -29,8 +29,8 @@ def insertion_sort(arr):
     return arr
 
 
-arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
-print(insertion_sort(arr))
+arr2 = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(insertion_sort(arr2))
 
 # STRETCH: implement the Bubble Sort function below
 
@@ -43,8 +43,8 @@ def bubble_sort(arr):
     return arr
 
 
-arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
-print(bubble_sort(arr))
+arr3 = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(bubble_sort(arr3))
 
 # STRETCH: implement the Count Sort function below
 
@@ -52,6 +52,10 @@ print(bubble_sort(arr))
 def count_sort(arr, maximum=-1):
 
     return arr
+
+
+arr4 = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(count_sort(arr4))
 
 
 '''

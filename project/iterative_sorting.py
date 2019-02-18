@@ -40,7 +40,22 @@ def bubble_sort(arr):
     return arr
 
 
+arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(bubble_sort(arr))
+
 # STRETCH: implement the Count Sort function below
+
+
 def count_sort(arr, maximum=-1):
 
     return arr
+
+
+'''
+Bogosort is a very inefficient sorting algo.
+Its name is a portmanteau of Bogus and Sort.
+It permutes the original input until the input ends up in sorted order.
+A real-life example would be throwing a deck of cards in the air
+and then picking them up one by one to see if they're in sorted order;
+if they're not, repeat.
+'''

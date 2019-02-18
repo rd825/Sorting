@@ -2,8 +2,6 @@
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
-        print(f'Loop {i}')
-        print(arr)
         cur_index = i
         smallest_index = cur_index
         # TO-DO: find next smallest element
@@ -11,23 +9,28 @@ def selection_sort(arr):
         for j in range(i, len(arr)):
             if arr[j] < arr[smallest_index]:
                 smallest_index = j
-        print(f'smallest element: {arr[smallest_index]}')
         # TO-DO: swap
         arr[i], arr[smallest_index] = arr[smallest_index], arr[i]
     return arr
 
 
-animals = ['duck', 'jackal', 'hippo', 'aardvark', 'cat',
-           'flamingo', 'iguana', 'giraffe', 'elephant', 'bear']
-
-selection_sort(animals)
+my_arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(selection_sort(my_arr))
 
 # TO-DO: implement the Insertion Sort function below
 
 
 def insertion_sort(arr):
-
+    for i in range(1, len(arr)):
+        j = i-1
+        while arr[j] > arr[j + 1] and j >= 0:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            j -= 1
     return arr
+
+
+arr = [2, 5, 9, 7, 4, 1, 3, 8, 6]
+print(insertion_sort(arr))
 
 
 # STRETCH: implement the Bubble Sort function below
